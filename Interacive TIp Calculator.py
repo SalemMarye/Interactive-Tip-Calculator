@@ -1,6 +1,9 @@
-food_amount = float(input('Enter your food amount : $'))
-tip_percentage = float(input('Enter your tip amount: $'))
+food_amount = float(input('Enter your bill amount: $'))
+tip_amount = float(input('Enter your tip percentage: $'))
+tip_percentage = tip_amount * food_amount
 
-tip_amount = food_amount * tip_percentage
+print(f'Tip: ${tip_amount}')
+print(f'Food Cost: ${food_amount}')
 
-print('$' + str(tip_amount))
+total = food_amount + tip_percentage
+print('Your complete total is: $' + str(total))
